@@ -1,0 +1,180 @@
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: "Smythe";
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    text-align: center
+}
+
+.complete-order {
+    border: none;
+    background: #16DB99;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: #fff;
+    padding: 17px 175px;
+    display: inline-block;
+    margin: 0 auto;
+    width: 90%;
+     
+}
+hr{
+    background: black;
+    height: 2px;
+}
+
+.add-btn {
+    background: #F5F5F5;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 0.4em 0.6em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.total-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-inner {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+.menu-ordered-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.remove-btn{
+    border: none;
+    font-size: 0.6em;
+    color: #999;
+}
+
+.ordered-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.ingredients {
+    color: #8B8B8B;
+}
+
+.hidden-form {
+    display: none;
+    text-align: center;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+    background: #FFFFFF;
+    border-radius: 3.88991px;
+    padding: 1em;
+    font-family: 'Open-sans';
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 80%;
+    width: 350px;
+    margin: auto;
+}
+
+.reset-div{
+    text-align: center;
+}
+
+.reset {
+    display: none;
+    margin-top: 10px;
+    padding: 5px 14px;
+    border: none;
+    background-color: #FC3D21;
+    color: #ecfeff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.close-modal-btn-container{
+    text-align: right;
+}
+
+.modal-close-btn{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: black;
+}
+
+
+input {
+    padding: 0.5em;
+    margin-bottom: 0.9em;
+    width: 90%
+}
+
+.pay-btn {
+     color: #fff;
+     background: #16DB99;
+     border-radius: 3.88991px;
+     border: none;
+     padding: 16px;
+     display: block;
+     margin: 0 auto;
+     width: 95%;
+}
+
+@media (max-width: 400px){
+    body {
+        font-size: 1em;
+    }
+
+    .complete-order{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       
+    }
+
+    .complete-order::after {
+        content: '';
+        display: block;
+    }
+    
+   
+}
+
+@media (min-width: 500px){
+       
+    .ordered-menu, .total-price-container, .menu, header {
+        margin: 0 auto;
+        max-width: 900px;
+        font-size: 1.5rem;
+    }
+
+    .reset {
+        font-size: 1.5rem;
+    }
+}
