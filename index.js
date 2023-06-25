@@ -123,7 +123,7 @@ function getOrderArray() {
                         <p>$${menuItem.price}</p>
                     </div>
                 </div>
-               <button data-buy='${menuItem.id}' class="add-btn">X</button>
+               <button data-buy='${menuItem.id}' class="add-btn">+</button>
             </div>
         `
     })
